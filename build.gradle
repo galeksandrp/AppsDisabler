@@ -22,6 +22,8 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://jitpack.io' }
+        maven { url 'https://raw.githubusercontent.com/galeksandrp/AppsDisabler/refs/heads/jcenter' }
+//        maven { url 'https://artifactory.appodeal.com/appodeal-public' }
     }
 }
 
