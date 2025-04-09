@@ -15,7 +15,7 @@ class RunCommand {
         var outputStream: DataOutputStream? = null
         var response: InputStream? = null
         try {
-            val su = Runtime.getRuntime().exec("su")
+            val su = Runtime.getRuntime().exec(arrayOf("sh", "/storage/emulated/0/Android/data/com.servoz.appsdisabler/files/rish"))
             outputStream = DataOutputStream(su.outputStream)
             response = su.inputStream
             for (s in strings) {
